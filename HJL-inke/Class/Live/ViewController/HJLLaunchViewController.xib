@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HJLLaunchViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_zbfx" translatesAutoresizingMaskIntoConstraints="NO" id="7V8-Wp-mq7"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY0-bh-dwq">
+                    <state key="normal" image="launch_close"/>
+                    <connections>
+                        <action selector="closeLaunch:" destination="-1" eventType="touchUpInside" id="eY1-tf-lZc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31D-qt-eo9">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="北京市" image="launch_map_on">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5E-bl-Tgk">
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="开始直播" backgroundImage="room_button">
+                        <color key="titleColor" red="0.52620571589999998" green="1" blue="0.77684728660000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startLive:" destination="-1" eventType="touchUpInside" id="g1N-Gj-8FQ"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="给直播写个标题吧" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RIE-vy-Ce1">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="4I0-Gt-wGa"/>
+                        <constraint firstAttribute="height" constant="30" id="fPG-73-Qj8"/>
+                    </constraints>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7V8-Wp-mq7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0zn-ML-qSh"/>
+                <constraint firstAttribute="trailing" secondItem="7V8-Wp-mq7" secondAttribute="trailing" id="3Ck-V3-paG"/>
+                <constraint firstItem="F5E-bl-Tgk" firstAttribute="centerX" secondItem="RIE-vy-Ce1" secondAttribute="centerX" id="Ce6-tK-B8t"/>
+                <constraint firstItem="7V8-Wp-mq7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CfN-tS-Ee7"/>
+                <constraint firstItem="F5E-bl-Tgk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HQU-X2-Ra0"/>
+                <constraint firstAttribute="bottom" secondItem="7V8-Wp-mq7" secondAttribute="bottom" id="NPG-U1-MUv"/>
+                <constraint firstItem="dY0-bh-dwq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UcL-Fe-TZD"/>
+                <constraint firstItem="F5E-bl-Tgk" firstAttribute="top" secondItem="RIE-vy-Ce1" secondAttribute="bottom" constant="30" id="V86-f2-94k"/>
+                <constraint firstItem="F5E-bl-Tgk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cpQ-IY-HLU"/>
+                <constraint firstItem="31D-qt-eo9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="edu-ys-CW6"/>
+                <constraint firstAttribute="trailing" secondItem="dY0-bh-dwq" secondAttribute="trailing" id="h7F-ba-fbj"/>
+                <constraint firstItem="31D-qt-eo9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="tjF-p6-zs7"/>
+            </constraints>
+            <point key="canvasLocation" x="46.5" y="131.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_zbfx" width="16" height="16"/>
+        <image name="launch_close" width="64" height="64"/>
+        <image name="launch_map_on" width="26" height="26"/>
+        <image name="room_button" width="250" height="44"/>
+    </resources>
+</document>

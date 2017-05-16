@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HJLNearLiveCell">
+            <rect key="frame" x="0.0" y="0.0" width="73" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="73" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ffm-Ud-9Rs">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ffm-Ud-9Rs" secondAttribute="height" id="wgm-SB-F4d"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlT-Jz-I1i">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="eiP-fj-JB4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.67870107319999995" green="0.67870107319999995" blue="0.67870107319999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="RlT-Jz-I1i" firstAttribute="top" secondItem="ffm-Ud-9Rs" secondAttribute="bottom" id="3bs-g2-tCa"/>
+                <constraint firstItem="ffm-Ud-9Rs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="K09-rn-Oss"/>
+                <constraint firstAttribute="trailing" secondItem="ffm-Ud-9Rs" secondAttribute="trailing" id="KqN-pb-jXG"/>
+                <constraint firstItem="RlT-Jz-I1i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RN3-7S-Tre"/>
+                <constraint firstItem="ffm-Ud-9Rs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ffv-LI-Vbx"/>
+                <constraint firstAttribute="trailing" secondItem="RlT-Jz-I1i" secondAttribute="trailing" id="pUL-ie-aeq"/>
+            </constraints>
+            <size key="customSize" width="73" height="100"/>
+            <connections>
+                <outlet property="distanceLabel" destination="RlT-Jz-I1i" id="92u-91-eHY"/>
+                <outlet property="headView" destination="ffm-Ud-9Rs" id="B6M-iu-BUR"/>
+            </connections>
+            <point key="canvasLocation" x="-85.5" y="67"/>
+        </collectionViewCell>
+    </objects>
+</document>
